@@ -1,0 +1,33 @@
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+<div class="container">
+<h1>Edit Product</h1>
+<form #form="ngForm" (ngSubmit)="confirmEdit()">
+<p>Title: <input 
+value={{product.title}} 
+type="text" 
+name="title"
+required
+minlength="4"
+[(ngModel)]="product.title"
+#title="ngModel"></p>
+<p>Price: <input 
+value={{product.price}} 
+type="text" 
+name="price"
+required
+minlength="1"
+[(ngModel)]="product.price"
+#price="ngModel">
+</p>
+<p>url: <input 
+value={{product.url}} 
+type="text" 
+name="url"
+[(ngModel)]="product.url"
+#url="ngModel">
+</p>
+<input [routerLink]="['/products']" [disabled]="!form.valid" type="submit" value="UPDATE">
+</form>
+<br>
+<input [routerLink]="['/products']" (click)="deletethis()" type="submit" value="DELETE">
+</div>

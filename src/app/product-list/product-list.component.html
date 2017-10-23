@@ -1,0 +1,15 @@
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+<div class="container">
+<h1>Products List</h1>
+<div *ngFor='let product of products; let i = index'>
+    <div class="box">
+      <img src={{product.url}}>
+      <p>{{product.title}}</p>
+      <p>{{product.price}}</p>
+      <input class= "edit" [routerLink]="['/products','edit', i ]" type="submit" value="edit">
+      <br>
+      <input class= "delete" [routerLink]="['']"(click)='callDelete(i)' type="submit" value="delete">
+    </div>
+	</div>
+</div>

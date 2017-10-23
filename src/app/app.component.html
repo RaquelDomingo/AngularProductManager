@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center"> -->
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+  <div class="container">
+    <h1>
+    {{title}}
+  </h1>
+
+<a [routerLink]="['']">Home</a> | <a [routerLink]="['products']">Product List</a> | <a [routerLink]="['products', 'new']">Product Creation</a>
+</div>
+
+<router-outlet></router-outlet>
