@@ -1,3 +1,6 @@
+<img width="768" alt="product management" src="https://user-images.githubusercontent.com/29441324/31867930-5b3702e2-b74c-11e7-915f-678ccdac8ade.png">
+
+
 # ProductManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
